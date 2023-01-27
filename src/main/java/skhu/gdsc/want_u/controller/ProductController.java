@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import skhu.gdsc.want_u.domain.dto.ProductDTO;
-import skhu.gdsc.want_u.service.MakerService;
 import skhu.gdsc.want_u.service.ProductService;
 
 import java.util.List;
@@ -16,7 +15,6 @@ import java.util.List;
 public class ProductController {
 
     private final ProductService productService;
-    private final MakerService makerService;
 
 
     //전체 리스트 출력

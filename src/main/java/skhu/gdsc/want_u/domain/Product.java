@@ -31,12 +31,15 @@ public class Product {
     @Column(nullable = false)
     private String link;
 
+    @Column(nullable = false)
+    private int price;
 
     public ProductDTO toDTO() {
         return ProductDTO.builder()
                 .id(id)
                 .name(name)
                 .link(link)
+                .price(price)
                 .build();
     }
 

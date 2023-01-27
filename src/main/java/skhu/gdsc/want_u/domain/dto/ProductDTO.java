@@ -17,4 +17,6 @@ public class ProductDTO {
 
     private String link;
 
+    private int price;
+
 }
