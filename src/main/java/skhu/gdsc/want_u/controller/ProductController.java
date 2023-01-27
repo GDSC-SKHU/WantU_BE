@@ -31,6 +31,7 @@ public class ProductController {
     }
 
 
+    // 카테고리 별 제품리스트 출력
     @GetMapping("/main/{id}")
     public ResponseEntity<List<ProductDTO>> findAllMakerId(@PathVariable("id") Long id) {
         List<ProductDTO> responses = productService.findAllByMakerId(id);
