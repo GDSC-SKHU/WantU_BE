@@ -9,22 +9,12 @@ import skhu.gdsc.want_u.domain.Maker;
 import skhu.gdsc.want_u.domain.dto.MakerDTO;
 import skhu.gdsc.want_u.repository.MakerRepository;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 @Service
 @RequiredArgsConstructor
 public class MakerService {
 
     private final MakerRepository makerRepository;
 
-    @Transactional(readOnly = true)
-    public List<MakerDTO> findAll() {
-        List<Maker> makers = makerRepository.findAll();
-        return makers.stream()
-                .map(Maker::toDTO)
-                .collect(Collectors.toList());
-    }
     @Transactional(readOnly = true)
     public MakerDTO findById(Long id) {
         Maker maker = findEntityById(id);

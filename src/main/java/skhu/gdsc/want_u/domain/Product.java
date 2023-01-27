@@ -27,8 +27,6 @@ public class Product {
     @JoinColumn(name = "maker_id")
     private Maker maker;
 
-    @Column(nullable = false)
-    private int price;
 
     @Column(nullable = false)
     private String link;
@@ -38,7 +36,6 @@ public class Product {
         return ProductDTO.builder()
                 .id(id)
                 .name(name)
-                .price(price)
                 .link(link)
                 .build();
     }

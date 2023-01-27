@@ -46,12 +46,4 @@ public class ProductController {
         return ResponseEntity.ok(responses);
     }
 
-//    //id를 불러와서 호출되면
-//    @GetMapping("/main/{id}")
-//    //id에 맞는 maker 불러옴
-//    public ResponseEntity<MakerDTO> findById(@PathVariable Long id) { // @PathVariable: id를 파라미터로 받아 사용.
-//        MakerDTO response = makerService.findById(id);
-//
-//        return ResponseEntity.ok(response);
-//    }
 }

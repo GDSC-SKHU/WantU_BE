@@ -14,7 +14,7 @@ public class ProductDTO {
 
     @NotBlank
     private String name;
-    private int price;
+
     private String link;
 
 }
